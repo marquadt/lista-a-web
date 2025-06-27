@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista A</title>
+  <style>
+    /* --- estilos anteriores --- */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f0;
+      color: #2c2c2c;
+    }
+
+    header {
+      background-color: #cc0000;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .slogan {
+      font-style: italic;
+      margin-top: 5px;
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #990000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .carta {
+      background-color: #ffe6e6;
+      border-left: 8px solid #cc0000;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .carta:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .carta img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    /* Nueva clase para sección miembros */
+    .miembros {
+      background-color: #ffe6e6;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-left: 8px solid #cc0000;
+    }
+
+    .miembros img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .encuesta {
+      background-color: #ffe6e6;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .encuesta h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #cc0000;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #a30000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #cc0000;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lista A</h1>
+    <div class="slogan">¡Pasión por el cambio y el compromiso!</div>
+  </header>
+
+  <nav>
+    <a href="#quienes">¿Quiénes somos?</a>
+    <a href="#miembros">Miembros</a>
+    <a href="#propuestas">Propuestas</a>
+    <a href="#votar">¿Por qué votar?</a>
+    <a href="#encuesta">Encuesta</a>
+  </nav>
+
+  <main>
+    <section class="carta" id="quienes">
+      <h2>¿Quiénes somos?</h2>
+      <p>Somos estudiantes con visión, liderazgo y compromiso. Trabajamos por una comunidad más unida, segura y participativa.</p>
+    </section>
+
+    <section class="miembros" id="miembros">
+      <h2>Miembros de la Lista A</h2>
+      <img src="C:\Users\Usuario\OneDrive\Imágenes\lista A.jpg" alt="Miembros de la Lista A" />
+    </section>
+
+    <section class="carta" id="propuestas">
+      <h2>Nuestras propuestas</h2>
+      <ul>
+        <li>Actividades deportivas y culturales todos los meses</li>
+        <li>Mejoras en los espacios de descanso y recreación</li>
+        <li>Apoyo emocional y talleres de bienestar</li>
+        <li>Acceso a materiales escolares para todos</li>
+      </ul>
+    </section>
+
+    <section class="carta" id="votar">
+      <h2>¿Por qué votar por la Lista A?</h2>
+      <p>Porque somos estudiantes como tú, que escuchamos, proponemos y actuamos. ¡Tu voz cuenta y con Lista A se hará realidad!</p>
+    </section>
+
+    <section class="encuesta" id="encuesta">
+      <h3>🗳️ Encuesta rápida</h3>
+      <p>¿Qué propuesta crees que beneficiará más a todos?</p>
+      <button class="btn" onclick="alert('¡Gracias por votar por el deporte! 🏀')">⚽ Actividades deportivas</button>
+      <button class="btn" onclick="alert('¡Gracias por votar por el bienestar! 🧘')">💆 Talleres de bienestar</button>
+      <button class="btn" onclick="alert('¡Gracias por apoyar la tecnología! 💻')">🖥️ Acceso a computadoras</button>
+      <button class="btn" onclick="alert('¡Gracias por votar por el reciclaje! 🌱')">♻️ Campañas ecológicas</button>
+      <button class="btn" onclick="alert('¡Gracias por apoyar la inclusión! 🤝')">🌍 Inclusión y diversidad</button>
+    </section>
+  </main>
+
+  <footer>
+    Vota por la Lista A • Unidos por un mejor mañana ❤️
+  </footer>
+
+</body>
+</html>
